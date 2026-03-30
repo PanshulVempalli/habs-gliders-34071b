@@ -6,12 +6,12 @@ const achievements = [
   {
     icon: Globe,
     title: "#1 in the UK",
-    desc: "Ranked 1st in the UK for both middle and high school VEX V5 Robotics.",
+    desc: "Ranked 1st in the UK for both middle and high school in VEX VR.",
   },
   {
     icon: Star,
     title: "#12 in the World",
-    desc: "Ranked 12th globally in VEX V5 Middle School division.",
+    desc: "Ranked 12th globally in VEX VR Middle School division.",
   },
   {
     icon: Award,
@@ -65,7 +65,7 @@ const AchievementsSection = () => {
           className="mt-12 text-center"
         >
           <div className="inline-block bg-card border-gradient-gold rounded-lg px-10 py-6">
-            <div className="font-display text-5xl text-gradient-gold mb-2">94</div>
+            <div className="font-display text-5xl text-gradient-gold mb-2">95</div>
             <div className="text-muted-foreground text-sm uppercase tracking-wider">
               VR Skills High Score — 250+ Simulated Runs
             </div>
