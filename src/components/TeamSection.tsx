@@ -4,33 +4,33 @@ import { useRef } from "react";
 const members = [
   {
     name: "Kayan",
-    role: "Lead Programmer & Strategy",
-    desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Also leads the HABS PowerStrike Greenpower team.",
+    role: "Driver & Programmer",
+    desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
   },
   {
-    name: "Panshul",
-    role: "Notebook Lead & Programmer",
-    desc: "First year in VEX with strengths in Python coding and technical writing. Also competed in Greenpower alongside Kayan.",
-  },
-  {
-    name: "Asha P.",
-    role: "Builder & Designer",
-    desc: "Three years of VEX experience (Years 7–9), bringing deep knowledge of robot construction and competition dynamics.",
-  },
-  {
-    name: "Tasnim",
-    role: "Mechanical Design",
-    desc: "Key contributor to drivetrain engineering, design cycle documentation, and mechanical testing protocols.",
+    name: "Joshua",
+    role: "CAD Designer & Builder",
+    desc: "First year competing in VEX. Strengths in efficiency and CAD expertise. Main focus is design and mechanical assembly.",
   },
   {
     name: "Asha R.",
     role: "Builder & Designer",
-    desc: "Contributes to structural design, robot assembly, and design board creation for competitions.",
+    desc: "Competed in VEX Year 8 and Year 9. Expert at replicating builds quickly and effectively from reference pictures or CAD models. Exceptional building skills.",
   },
   {
-    name: "Joshua",
-    role: "Builder & Strategy",
-    desc: "Supports mechanical builds, strategic planning, and competition-day preparation.",
+    name: "Tasnim",
+    role: "Notebooker & CAD Designer",
+    desc: "Competed in VEX IQ Year 9, reached two regional competitions. Strengths in creativity, art skills, and organization. Primary focus on documentation and design phase support.",
+  },
+  {
+    name: "Panshul",
+    role: "Notebook Lead & Programmer",
+    desc: "First year in VEX. Strengths in Python coding and technical writing. Hands-on experience through Greenpower competition alongside Kayan. Primary roles in notebook and programming.",
+  },
+  {
+    name: "Asha P.",
+    role: "Builder & Online Skills",
+    desc: "Three years of VEX experience (Years 7–9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
   },
 ];
 

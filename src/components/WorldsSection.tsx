@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { MapPin, Calendar, Target } from "lucide-react";
-import pushbackField from "@/assets/pushback-field.jpg";
 
 const getCountdown = (targetDate: Date) => {
   const now = new Date().getTime();
@@ -84,13 +83,11 @@ const WorldsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="max-w-3xl mx-auto rounded-lg overflow-hidden border border-gold/30 shadow-lg mb-12"
+          className="max-w-3xl mx-auto rounded-lg bg-card border border-gold/30 p-8 shadow-lg mb-12"
         >
-          <img src={pushbackField} alt="Push Back field layout" className="w-full h-auto" />
-          <div className="bg-gradient-to-r from-black/70 to-black/30 p-4 text-center">
-            <p className="text-foreground/80 text-sm">Pushback field image</p>
-            <p className="font-display text-lg text-gold">Our gameplan centers around dominant goal control and rapid counter-push strategies.</p>
-          </div>
+          <p className="font-display text-lg text-gold text-center">
+            Proud to be representing the UK on the Worlds stage
+          </p>
         </motion.div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center max-w-3xl mx-auto mb-16">

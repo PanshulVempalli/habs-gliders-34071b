@@ -136,15 +136,10 @@ const PushBackPage = () => {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden border-gradient-gold glow-gold">
-              <img
-                src={actionImg}
-                alt="Push Back game action"
-                className="w-full h-auto"
-                loading="lazy"
-                width={1200}
-                height={800}
-              />
+            <div className="rounded-lg bg-card border-gradient-gold p-8">
+              <p className="text-foreground/80 text-center font-display text-lg text-gold">
+                Proud to be representing the UK on the Worlds stage
+              </p>
             </div>
           </div>
         </div>

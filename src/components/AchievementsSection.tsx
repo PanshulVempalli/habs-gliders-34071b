@@ -19,9 +19,9 @@ const achievements = [
     desc: "Advanced to the semifinals at the UK VEX V5 National Championship 2026.",
   },
   {
-    icon: Smartphone,
-    title: "HABS Gliders Hub App",
-    desc: "Built a custom iOS app with AI strategy assistant (GPT-5.2), interactive field planner, and competition tracker.",
+    icon: Award,
+    title: "Judges Award",
+    desc: "Awarded Judges Award at the League of Legends Regional Event.",
   },
 ];
 
