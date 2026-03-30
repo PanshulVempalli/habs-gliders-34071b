@@ -3,27 +3,27 @@ import { useRef } from "react";
 
 const members = [
   {
-    name: "Kayan Shah",
+    name: "Kayan",
     role: "Lead Programmer & Strategy",
     desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Also leads the HABS PowerStrike Greenpower team.",
   },
   {
-    name: "Panshul Vempalli",
+    name: "Panshul",
     role: "Notebook Lead & Programmer",
     desc: "First year in VEX with strengths in Python coding and technical writing. Also competed in Greenpower alongside Kayan.",
   },
   {
-    name: "Asha Patel Davis",
+    name: "Asha P.",
     role: "Builder & Designer",
     desc: "Three years of VEX experience (Years 7–9), bringing deep knowledge of robot construction and competition dynamics.",
   },
   {
-    name: "Tasnim Magamedova",
+    name: "Tasnim",
     role: "Mechanical Design",
     desc: "Key contributor to drivetrain engineering, design cycle documentation, and mechanical testing protocols.",
   },
   {
-    name: "Asha R",
+    name: "Asha R.",
     role: "Builder & Designer",
     desc: "Contributes to structural design, robot assembly, and design board creation for competitions.",
   },
