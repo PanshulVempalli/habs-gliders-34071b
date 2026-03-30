@@ -8,6 +8,7 @@ const links = [
   { label: "Team", href: "#team" },
   { label: "Robot", href: "#robot" },
   { label: "Achievements", href: "#achievements" },
+  { label: "Push Back", href: "/push-back" },
   { label: "Worlds", href: "#worlds" },
 ];
 
