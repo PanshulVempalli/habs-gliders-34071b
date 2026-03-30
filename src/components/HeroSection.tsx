@@ -1,0 +1,73 @@
+import { motion } from "framer-motion";
+import logo from "@/assets/habs-gliders-logo.png";
+import heroBg from "@/assets/hero-bg.jpg";
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroBg}
+          alt=""
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-navy-gradient" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img
+            src={logo}
+            alt="HABS Gliders and Haberdashers' Schools logos"
+            className="mx-auto w-full max-w-2xl mb-8"
+          />
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-gradient-gold mb-4"
+        >
+          HABS GLIDERS
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="font-display text-xl md:text-2xl text-gold tracking-[0.2em] mb-6"
+        >
+          TEAM 34071B — VEX V5 ROBOTICS
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body"
+        >
+          The first team from Haberdashers' Elstree Schools to qualify for the
+          VEX Robotics World Championships. Dallas, Texas 2026.
+        </motion.p>
+
+        <motion.a
+          href="#about"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          className="inline-block border border-gold/50 text-gold px-8 py-3 font-display tracking-wider text-sm hover:bg-gold/10 transition-colors rounded-sm"
+        >
+          EXPLORE OUR JOURNEY
+        </motion.a>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
