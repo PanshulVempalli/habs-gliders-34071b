@@ -1,10 +1,37 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { MapPin, Calendar, Target } from "lucide-react";
+import pushbackField from "@/assets/pushback-field.jpg";
+
+const getCountdown = (targetDate: Date) => {
+  const now = new Date().getTime();
+  const distance = targetDate.getTime() - now;
+
+  if (distance <= 0) {
+    return { days: 0, hours: 0, minutes: 0, seconds: 0, completed: true };
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  return { days, hours, minutes, seconds, completed: false };
+};
 
 const WorldsSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
+  const targetDate = useMemo(() => new Date("2026-04-25T00:00:00Z"), []);
+  const [countdown, setCountdown] = useState(() => getCountdown(targetDate));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown(getCountdown(targetDate));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
 
   return (
     <section id="worlds" className="py-24 relative overflow-hidden" ref={ref}>
@@ -26,11 +53,45 @@ const WorldsSection = () => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="text-foreground/70 text-lg text-center max-w-2xl mx-auto mb-12"
+          className="text-foreground/70 text-lg text-center max-w-2xl mx-auto mb-6"
         >
-          For the first time in our school's history, a team is heading to the VEX Robotics 
-          World Championships. We're ready to represent Haberdashers' Elstree Schools on the global stage.
+          For the first time in our school's history, a joint team from Habs Boys and Habs Girls is heading to the VEX Robotics World Championships as the first Habs Girls team to qualify. We're ready to represent Haberdashers' Elstree Schools on the global stage.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex flex-wrap items-center justify-center gap-6 max-w-3xl mx-auto mb-10"
+        >
+          <div className="grid grid-cols-4 gap-3 text-center text-foreground/90">
+            {[
+              { label: "Days", value: countdown.days },
+              { label: "Hours", value: countdown.hours },
+              { label: "Minutes", value: countdown.minutes },
+              { label: "Seconds", value: countdown.seconds },
+            ].map((item) => (
+              <div key={item.label} className="bg-card border border-gold/20 rounded-lg p-3 min-w-[70px]">
+                <div className="font-display text-2xl text-gold">{item.value}</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground">{item.label}</div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center text-sm text-foreground/80">Until launch day (April 25, 2026)</div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="max-w-3xl mx-auto rounded-lg overflow-hidden border border-gold/30 shadow-lg mb-12"
+        >
+          <img src={pushbackField} alt="Push Back game field" className="w-full h-auto" />
+          <div className="bg-gradient-to-r from-black/70 to-black/30 p-4 text-center">
+            <p className="text-foreground/80 text-sm">Pushback Field Visual</p>
+            <p className="font-display text-lg text-gold">Our gameplan centers around dominant goal control and rapid counter-push strategies.</p>
+          </div>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center max-w-3xl mx-auto mb-16">
           {[

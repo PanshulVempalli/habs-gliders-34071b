@@ -54,6 +54,7 @@ const HeroSection = () => {
         >
           The first team from Haberdashers' Elstree Schools to qualify for the
           VEX Robotics World Championships. St. Louis, Missouri — April 25th, 2026.
+          This is a website, not an app — designed to share our journey to Worlds.
         </motion.p>
 
         <motion.a
