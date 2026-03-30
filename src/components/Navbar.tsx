@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const links = [
   { label: "About", href: "#about" },
@@ -8,31 +9,46 @@ const links = [
   { label: "Team", href: "#team" },
   { label: "Robot", href: "#robot" },
   { label: "Achievements", href: "#achievements" },
+  { label: "Push Back", href: "/push-back" },
   { label: "Worlds", href: "#worlds" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const renderLink = (l: { label: string; href: string }, onClick?: () => void) => {
+    const className = "text-muted-foreground hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider";
+
+    if (l.href.startsWith("/")) {
+      return (
+        <Link key={l.href} to={l.href} className={className} onClick={onClick}>
+          {l.label}
+        </Link>
+      );
+    }
+
+    // Hash links: if not on home, navigate to home + hash
+    const href = isHome ? l.href : `/${l.href}`;
+    return (
+      <a key={l.href} href={href} className={className} onClick={onClick}>
+        {l.label}
+      </a>
+    );
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <a href="#" className="font-display text-xl tracking-wider text-primary">
+        <Link to="/" className="font-display text-xl tracking-wider text-primary">
           HABS GLIDERS
           <span className="text-gold ml-2 text-sm font-body">34071B</span>
-        </a>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex gap-6">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider"
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) => renderLink(l))}
         </div>
 
         {/* Mobile toggle */}
@@ -53,16 +69,7 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-background border-b border-border"
           >
             <div className="flex flex-col gap-2 p-4">
-              {links.map((l) => (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider py-2"
-                >
-                  {l.label}
-                </a>
-              ))}
+              {links.map((l) => renderLink(l, () => setOpen(false)))}
             </div>
           </motion.div>
         )}

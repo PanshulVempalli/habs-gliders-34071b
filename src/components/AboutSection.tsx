@@ -31,9 +31,9 @@ const AboutSection = () => {
             joint team between the two schools, making this both a technical and collaborative milestone.
           </p>
           <p className="text-foreground/80 text-lg leading-relaxed mt-4">
-            Ranked <span className="text-gold font-semibold">1st in the UK</span> for both middle and 
+            Ranked <span className="text-gold font-semibold">1st in the UK</span> in VEX VR for both middle and 
             high school and <span className="text-gold font-semibold">12th in the world</span> in middle 
-            school, we are now preparing for the World Championships in Dallas, Texas — the first team 
+            school, we are now preparing for the World Championships in St. Louis, Missouri — the first team 
             from our school to ever qualify.
           </p>
         </motion.div>

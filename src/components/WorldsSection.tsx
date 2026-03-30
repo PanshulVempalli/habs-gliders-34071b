@@ -34,8 +34,8 @@ const WorldsSection = () => {
 
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center max-w-3xl mx-auto mb-16">
           {[
-            { icon: MapPin, label: "Dallas, Texas", sub: "USA" },
-            { icon: Calendar, label: "2026 Season", sub: "World Championship" },
+            { icon: MapPin, label: "St. Louis, Missouri", sub: "USA" },
+            { icon: Calendar, label: "April 25th, 2026", sub: "World Championship" },
             { icon: Target, label: "Push Back", sub: "VEX V5 Game" },
           ].map((item, i) => (
             <motion.div
