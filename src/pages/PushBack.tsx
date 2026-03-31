@@ -22,7 +22,7 @@ const phases = [
     icon: Timer,
     title: "Autonomous Period",
     color: "text-gold",
-    desc: "The match begins with a 15-second autonomous period where robots operate using only pre-programmed instructions — no driver input allowed. Scoring here earns the Autonomous Bonus (10 points), which can be decisive in close matches.",
+    desc: "The match begins with a 15-second autonomous period where robots operate using only pre-programmed instructions - no driver input allowed. Scoring here earns the Autonomous Bonus (10 points), which can be decisive in close matches.",
     tips: [
       "Requires precision and consistency",
       "Pre-programmed routes using sensors (IMU, vision)",
@@ -44,7 +44,7 @@ const phases = [
     icon: ParkingSquare,
     title: "Endgame",
     color: "text-gold-bright",
-    desc: "In the final seconds, robots attempt to park in designated zones for bonus points. Parking both alliance robots earns a massive 30-point bonus — often the difference between winning and losing.",
+    desc: "In the final seconds, robots attempt to park in designated zones for bonus points. Parking both alliance robots earns a massive 30-point bonus - often the difference between winning and losing.",
     tips: [
       "High-value bonus in limited time",
       "Requires quick repositioning",
@@ -95,7 +95,7 @@ const PushBackPage = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="font-display text-xl text-gold tracking-[0.15em] mb-6"
           >
-            VEX V5 ROBOTICS COMPETITION — 2025/26 SEASON GAME
+            VEX V5 ROBOTICS COMPETITION - 2025/26 SEASON GAME
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -103,7 +103,7 @@ const PushBackPage = () => {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-foreground/80 text-lg max-w-3xl leading-relaxed"
           >
-            Push Back is the official VEX V5 Robotics Competition game for the 2025–2026 season.
+            Push Back is the official VEX V5 Robotics Competition game for the 2025-2026 season.
             Two alliances of two robots each compete to score blocks into goals, control zones, and
             park for bonus points. Matches combine autonomous programming, driver skill, and
             strategic thinking in an intense, fast-paced format.
@@ -129,7 +129,7 @@ const PushBackPage = () => {
                   through <span className="text-gold font-semibold">match loading stations</span>.
                 </p>
                 <p>
-                  A key strategic element is <span className="text-cream font-semibold">zone control</span> —
+                  A key strategic element is <span className="text-cream font-semibold">zone control</span> -
                   having more blocks on your side of a long goal earns 10 bonus points per controlled zone.
                   This means simply scoring the most blocks isn't always the best strategy; you need to
                   outscore your opponent in each individual zone.
@@ -253,7 +253,7 @@ const PushBackPage = () => {
               {
                 icon: "🎯",
                 title: "Zone Control Strategy",
-                desc: "Rather than just scoring volume, we focus on controlling zones in long goals — scoring 3 on each side to guarantee the 10-point control bonus.",
+                desc: "Rather than just scoring volume, we focus on controlling zones in long goals - scoring 3 on each side to guarantee the 10-point control bonus.",
               },
               {
                 icon: "🛡️",
@@ -273,7 +273,7 @@ const PushBackPage = () => {
               {
                 icon: "🅿️",
                 title: "Endgame Reliability",
-                desc: "We plan for the 30-point double park — our autonomous routines account for final positioning to maximise endgame scoring.",
+                desc: "We plan for the 30-point double park - our autonomous routines account for final positioning to maximise endgame scoring.",
               },
             ].map((item, i) => (
               <motion.div
@@ -305,7 +305,7 @@ const PushBackPage = () => {
               reliability could create competitive advantage."
             </p>
             <p className="text-gold text-sm mt-4 font-display tracking-wider">
-              — FROM OUR GAME ANALYSIS
+              - FROM OUR GAME ANALYSIS
             </p>
           </div>
         </div>

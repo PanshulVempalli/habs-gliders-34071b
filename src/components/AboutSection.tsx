@@ -26,14 +26,14 @@ const AboutSection = () => {
             WHO WE ARE
           </h2>
           <p className="text-foreground/80 text-lg leading-relaxed">
-            We are HABS Gliders — a Year 10 mixed team from Haberdashers' Boys' and Girls' School 
+            We are HABS Gliders - a Year 10 mixed team from Haberdashers' Boys' and Girls' School 
             competing in VEX V5 Robotics. This season marks our first time competing together as a 
             joint team between the two schools, making this both a technical and collaborative milestone.
           </p>
           <p className="text-foreground/80 text-lg leading-relaxed mt-4">
             Ranked <span className="text-gold font-semibold">1st in the UK</span> in VEX VR for both middle and 
             high school and <span className="text-gold font-semibold">12th in the world</span> in middle 
-            school, we are now preparing for the World Championships in St. Louis, Missouri — the first team 
+            school, we are now preparing for the World Championships in St. Louis, Missouri - the first team 
             from our school to ever qualify.
           </p>
         </motion.div>

@@ -51,8 +51,8 @@ const AchievementsSection = () => {
               className="bg-card border-gradient-gold rounded-lg p-8 text-center hover:glow-gold transition-shadow duration-300"
             >
               <a.icon className="mx-auto mb-4 text-gold" size={36} />
-              <h3 className="font-display text-xl text-primary mb-2">{a.title}</h3>
-              <p className="text-foreground/60 text-sm">{a.desc}</p>
+              <h3 className="font-display text-xl text-primary mb-2 font-semibold">{a.title}</h3>
+              <p className="text-foreground/50 text-sm">{a.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -67,7 +67,7 @@ const AchievementsSection = () => {
           <div className="inline-block bg-card border-gradient-gold rounded-lg px-10 py-6">
             <div className="font-display text-5xl text-gradient-gold mb-2">95</div>
             <div className="text-muted-foreground text-sm uppercase tracking-wider">
-              VR Skills High Score — 250+ Simulated Runs
+              VR Skills High Score - 250+ Simulated Runs
             </div>
           </div>
         </motion.div>

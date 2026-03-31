@@ -34,7 +34,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-gradient-gold mb-4"
         >
-          HABS GLIDERS
+          HABS GLIDERS: Journey to Worlds
         </motion.h1>
 
         <motion.p
@@ -43,7 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="font-display text-xl md:text-2xl text-gold tracking-[0.2em] mb-6"
         >
-          TEAM 34071B — VEX V5 ROBOTICS
+          TEAM 34071B - VEX V5 ROBOTICS
         </motion.p>
 
         <motion.p
@@ -53,8 +53,7 @@ const HeroSection = () => {
           className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body"
         >
           The first team from Haberdashers' Elstree Schools to qualify for the
-          VEX Robotics World Championships. St. Louis, Missouri — April 25th, 2026.
-          This is a website, not an app — designed to share our journey to Worlds.
+          VEX Robotics World Championships. Join us as we share our story, achievements, and the path to St. Louis, Missouri - April 25th, 2026.
         </motion.p>
 
         <motion.a
@@ -62,7 +61,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="inline-block border border-gold/50 text-gold px-8 py-3 font-display tracking-wider text-sm hover:bg-gold/10 transition-colors rounded-sm"
+          className="inline-block bg-gold text-black px-8 py-3 font-display tracking-wider text-sm hover:bg-gold/90 transition-colors rounded-sm font-semibold"
         >
           EXPLORE OUR JOURNEY
         </motion.a>

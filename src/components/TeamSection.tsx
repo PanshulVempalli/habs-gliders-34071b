@@ -8,6 +8,11 @@ const members = [
     desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
   },
   {
+    name: "Panshul",
+    role: "Notebook Lead & Programmer",
+    desc: "First year in VEX. Strengths in Python coding and technical writing. Hands-on experience through Greenpower competition alongside Kayan. Primary roles in notebook and programming.",
+  },
+  {
     name: "Joshua",
     role: "CAD Designer & Builder",
     desc: "First year competing in VEX. Strengths in efficiency and CAD expertise. Main focus is design and mechanical assembly.",
@@ -30,7 +35,7 @@ const members = [
   {
     name: "Asha P.",
     role: "Builder & Online Skills",
-    desc: "Three years of VEX experience (Years 7–9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
+    desc: "Three years of VEX experience (Years 7-9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
   },
 ];
 
@@ -55,7 +60,7 @@ const TeamSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-muted-foreground text-center mb-16 max-w-xl mx-auto"
         >
-          A mixed Year 10 team from Haberdashers' Boys' and Girls' School — united by a passion for robotics.
+          A mixed Year 10 team from Haberdashers' Boys' and Girls' School - united by a passion for robotics.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
