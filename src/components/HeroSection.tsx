@@ -43,7 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="font-display text-xl md:text-2xl text-gold tracking-[0.2em] mb-6"
         >
-          TEAM 34071B - VEX V5 ROBOTICS
+          TEAM 34071B · VEX V5 ROBOTICS
         </motion.p>
 
         <motion.p
@@ -53,7 +53,7 @@ const HeroSection = () => {
           className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body"
         >
           The first team from Haberdashers' Elstree Schools to qualify for the
-          VEX Robotics World Championships. Join us as we share our story, achievements, and the path to St. Louis, Missouri - April 25th, 2026.
+          VEX Robotics World Championships. Join us as we share our story, achievements, and the path to St. Louis, Missouri, April 25th, 2026.
         </motion.p>
 
         <motion.a

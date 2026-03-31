@@ -67,7 +67,7 @@ const AchievementsSection = () => {
           <div className="inline-block bg-card border-gradient-gold rounded-lg px-10 py-6">
             <div className="font-display text-5xl text-gradient-gold mb-2">95</div>
             <div className="text-muted-foreground text-sm uppercase tracking-wider">
-              VR Skills High Score - 250+ Simulated Runs
+              VR Skills High Score · 250+ Simulated Runs
             </div>
           </div>
         </motion.div>

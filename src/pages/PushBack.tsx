@@ -95,7 +95,7 @@ const PushBackPage = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="font-display text-xl text-gold tracking-[0.15em] mb-6"
           >
-            VEX V5 ROBOTICS COMPETITION - 2025/26 SEASON GAME
+            VEX V5 ROBOTICS COMPETITION · 2025/26 SEASON GAME
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

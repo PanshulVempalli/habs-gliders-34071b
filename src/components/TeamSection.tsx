@@ -28,11 +28,6 @@ const members = [
     desc: "Competed in VEX IQ Year 9, reached two regional competitions. Strengths in creativity, art skills, and organization. Primary focus on documentation and design phase support.",
   },
   {
-    name: "Panshul",
-    role: "Notebook Lead & Programmer",
-    desc: "First year in VEX. Strengths in Python coding and technical writing. Hands-on experience through Greenpower competition alongside Kayan. Primary roles in notebook and programming.",
-  },
-  {
     name: "Asha P.",
     role: "Builder & Online Skills",
     desc: "Three years of VEX experience (Years 7-9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
@@ -60,7 +55,7 @@ const TeamSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-muted-foreground text-center mb-16 max-w-xl mx-auto"
         >
-          A mixed Year 10 team from Haberdashers' Boys' and Girls' School - united by a passion for robotics.
+          A mixed Year 10 team from Haberdashers' Boys' and Girls' School, united by a passion for robotics.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">

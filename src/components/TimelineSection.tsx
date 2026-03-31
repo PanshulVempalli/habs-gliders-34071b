@@ -24,7 +24,7 @@ const events = [
   },
   {
     date: "February 2026",
-    title: "UK Nationals - Semifinalists",
+    title: "UK Nationals Semifinalists",
     desc: "Advanced to the semifinals at the National Championship. Identified key reliability improvements needed for our intake and match loader systems.",
   },
   {
