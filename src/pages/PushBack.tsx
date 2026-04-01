@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowLeft, Target, Zap, Shield, Timer, Trophy, ParkingSquare, Square, ArrowUp, ArrowDown, Bot, Car } from "lucide-react";
+import { ArrowLeft, Target, Zap, Shield, Timer, Trophy, ParkingSquare, Square, ArrowUp, ArrowDown, Bot, Car, Package, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import fieldImg from "@/assets/pushback-field.jpg";
 import actionImg from "@/assets/pushback-action.jpg";
@@ -241,32 +241,32 @@ const PushBackPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
               {
-                icon: "⚡",
+                icon: RefreshCw,
                 title: "Cycle Speed Over Complexity",
                 desc: "Reliable, fast scoring cycles consistently outperform complex mechanisms. We prioritised repeatable intake-score-return loops.",
               },
               {
-                icon: "🎯",
+                icon: Target,
                 title: "Zone Control Strategy",
                 desc: "Rather than just scoring volume, we focus on controlling zones in long goals - scoring 3 on each side to guarantee the 10-point control bonus.",
               },
               {
-                icon: "🛡️",
+                icon: Shield,
                 title: "Defensive Resilience",
                 desc: "Our 6-motor drivetrain and RiGuan architecture provide the pushing power and stability to maintain position under defensive pressure.",
               },
               {
-                icon: "🤖",
+                icon: Bot,
                 title: "Autonomous Advantage",
                 desc: "With PID control, vision sensors, and 250+ VR simulation runs, our autonomous routines are built for consistency and early-match advantage.",
               },
               {
-                icon: "📦",
+                icon: Package,
                 title: "Match Loading Efficiency",
                 desc: "Our piston-actuated match loader with synchronised gears ensures rapid, reliable block introduction with minimal alignment time.",
               },
               {
-                icon: "🅿️",
+                icon: ParkingSquare,
                 title: "Endgame Reliability",
                 desc: "We plan for the 30-point double park - our autonomous routines account for final positioning to maximise endgame scoring.",
               },
@@ -278,7 +278,9 @@ const PushBackPage = () => {
                 transition={{ duration: 0.5, delay: 0.1 * i }}
                 className="bg-card border-gradient-gold rounded-lg p-6"
               >
-                <div className="text-2xl mb-3">{item.icon}</div>
+                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
+                  <item.icon className="text-gold" size={20} />
+                </div>
                 <h3 className="font-display text-lg text-primary mb-2">{item.title}</h3>
                 <p className="text-foreground/60 text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
