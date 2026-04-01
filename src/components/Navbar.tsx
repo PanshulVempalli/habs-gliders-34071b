@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "@/assets/habs-gliders-logo.png";
 
 const links = [
   { label: "About", href: "#about" },
@@ -42,10 +41,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="HABS Gliders logo" className="h-8 w-auto" />
-          <span className="font-display text-xl tracking-wider text-primary">HABS GLIDERS</span>
-          <span className="text-gold text-sm font-body">34071B</span>
+        <Link to="/" className="font-display text-xl tracking-wider text-primary">
+          HABS GLIDERS
+          <span className="text-gold ml-2 text-sm font-body">34071B</span>
         </Link>
 
         {/* Desktop */}
