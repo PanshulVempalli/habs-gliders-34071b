@@ -33,8 +33,8 @@ const AboutSection = () => {
           <p className="text-foreground/80 text-lg leading-relaxed mt-4">
             Ranked <span className="text-gold font-semibold">1st in the UK</span> in VEX VR for both middle and 
             high school and <span className="text-gold font-semibold">12th in the world</span> in middle 
-            school, we are now preparing for the World Championships in St. Louis, Missouri, the first team
-            from our school to ever qualify.
+            school, we are now preparing for the World Championships in St. Louis, Missouri, the first mixed team
+            from our schools to ever qualify.
           </p>
         </motion.div>
 

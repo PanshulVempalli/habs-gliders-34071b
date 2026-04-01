@@ -54,7 +54,7 @@ const WorldsSection = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-foreground/70 text-lg text-center max-w-2xl mx-auto mb-6"
         >
-          For the first time in our school's history, a joint team from Habs Boys and Habs Girls is heading to the VEX Robotics World Championships as the first Habs Girls team to qualify. We're ready to represent Haberdashers' Elstree Schools on the global stage.
+          For the first time in our schools' history, a joint team from Habs Boys and Habs Girls is heading to the VEX Robotics World Championships as the first team from Habs Girls' to qualify. We're ready to represent Haberdashers' Elstree Schools on the global stage.
         </motion.p>
 
         <motion.div

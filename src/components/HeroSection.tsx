@@ -52,7 +52,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body"
         >
-          The first team from Haberdashers' Elstree Schools to qualify for the
+          The first mixed team from Haberdashers' Elstree Schools to qualify for the
           VEX Robotics World Championships. Join us as we share our story, achievements, and the path to St. Louis, Missouri, April 25th, 2026.
         </motion.p>
 
