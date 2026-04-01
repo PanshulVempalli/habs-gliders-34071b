@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="flex items-center justify-between py-3 pl-0 pr-3 w-full">
+      <div className="flex items-center justify-between py-3 pl-4 pr-3 w-full">
         <Link to="/" className="font-display text-4xl tracking-wider text-primary">
           HABS GLIDERS
           <span className="text-gold ml-2 text-xl font-body">34071B</span>
