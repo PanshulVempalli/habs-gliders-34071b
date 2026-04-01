@@ -114,29 +114,26 @@ const PushBackPage = () => {
       {/* How it works visual */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div>
-              <h2 className="font-display text-3xl md:text-4xl text-primary mb-6">HOW THE GAME WORKS</h2>
-              <div className="space-y-4 text-foreground/75 leading-relaxed">
-                <p>
-                  The field features <span className="text-gold font-semibold">long goals</span> on each side,
-                  a <span className="text-gold font-semibold">center goal</span> (with upper and lower scoring),
-                  and <span className="text-gold font-semibold">parking zones</span> in the corners.
-                </p>
-                <p>
-                  <span className="text-cream font-semibold">Blocks</span> are scattered across the field at the start.
-                  Robots must intake these blocks and score them into goals. Additional blocks can be introduced
-                  through <span className="text-gold font-semibold">match loading stations</span>.
-                </p>
-                <p>
-                  A key strategic element is <span className="text-cream font-semibold">zone control</span> -
-                  having more blocks on your side of a long goal earns 10 bonus points per controlled zone.
-                  This means simply scoring the most blocks isn't always the best strategy; you need to
-                  outscore your opponent in each individual zone.
-                </p>
-              </div>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-primary mb-6">HOW THE GAME WORKS</h2>
+            <div className="space-y-4 text-foreground/75 leading-relaxed">
+              <p>
+                The field features <span className="text-gold font-semibold">long goals</span> on each side,
+                a <span className="text-gold font-semibold">center goal</span> (with upper and lower scoring),
+                and <span className="text-gold font-semibold">parking zones</span> in the corners.
+              </p>
+              <p>
+                <span className="text-cream font-semibold">Blocks</span> are scattered across the field at the start.
+                Robots must intake these blocks and score them into goals. Additional blocks can be introduced
+                through <span className="text-gold font-semibold">match loading stations</span>.
+              </p>
+              <p>
+                A key strategic element is <span className="text-cream font-semibold">zone control</span> -
+                having more blocks on your side of a long goal earns 10 bonus points per controlled zone.
+                This means simply scoring the most blocks isn't always the best strategy; you need to
+                outscore your opponent in each individual zone.
+              </p>
             </div>
-            <div />
           </div>
         </div>
       </section>
