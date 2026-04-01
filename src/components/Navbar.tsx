@@ -41,9 +41,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <Link to="/" className="font-display text-2xl tracking-wider text-primary">
+        <Link to="/" className="font-display text-3xl tracking-wider text-primary">
           HABS GLIDERS
-          <span className="text-gold ml-2 text-base font-body">34071B</span>
+          <span className="text-gold ml-2 text-lg font-body">34071B</span>
         </Link>
 
         {/* Desktop */}
