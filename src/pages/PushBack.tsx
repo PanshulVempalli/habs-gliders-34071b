@@ -136,9 +136,7 @@ const PushBackPage = () => {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg bg-card border-gradient-gold p-8 flex items-center justify-center min-h-[120px]">
-              <p className="text-foreground/40 text-center text-sm italic">Field overview · Push Back 2025/26</p>
-            </div>
+            <div />
           </div>
         </div>
       </section>
