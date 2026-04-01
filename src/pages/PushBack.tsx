@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowLeft, Target, Zap, Shield, Timer, Trophy, ParkingSquare } from "lucide-react";
+import { ArrowLeft, Target, Zap, Shield, Timer, Trophy, ParkingSquare, Square, ArrowUp, ArrowDown, Bot, Car } from "lucide-react";
 import { Link } from "react-router-dom";
 import fieldImg from "@/assets/pushback-field.jpg";
 import actionImg from "@/assets/pushback-action.jpg";
@@ -8,13 +8,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const scoringData = [
-  { category: "Each Block Scored", points: "3 pts", icon: "🟦" },
-  { category: "Controlled Zone (Long Goal)", points: "10 pts", icon: "🎯" },
-  { category: "Controlled Center Goal (Upper)", points: "8 pts", icon: "⬆️" },
-  { category: "Controlled Center Goal (Lower)", points: "6 pts", icon: "⬇️" },
-  { category: "1 Parked Robot", points: "8 pts", icon: "🅿️" },
-  { category: "2 Parked Alliance Robots", points: "30 pts", icon: "🅿️🅿️" },
-  { category: "Autonomous Bonus", points: "10 pts", icon: "🤖" },
+  { category: "Each Block Scored", points: "3 pts", icon: Square },
+  { category: "Controlled Zone (Long Goal)", points: "10 pts", icon: Target },
+  { category: "Controlled Center Goal (Upper)", points: "8 pts", icon: ArrowUp },
+  { category: "Controlled Center Goal (Lower)", points: "6 pts", icon: ArrowDown },
+  { category: "1 Parked Robot", points: "8 pts", icon: ParkingSquare },
+  { category: "2 Parked Alliance Robots", points: "30 pts", icon: Car },
+  { category: "Autonomous Bonus", points: "10 pts", icon: Bot },
 ];
 
 const phases = [
@@ -168,7 +168,9 @@ const PushBackPage = () => {
                 className="flex items-center justify-between py-4 border-b border-border last:border-b-0"
               >
                 <div className="flex items-center gap-4">
-                  <span className="text-2xl">{item.icon}</span>
+                  <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+                    <item.icon className="text-gold" size={18} />
+                  </div>
                   <span className="text-foreground/80 font-medium">{item.category}</span>
                 </div>
                 <span className="font-display text-gold text-lg">{item.points}</span>
