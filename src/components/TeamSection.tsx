@@ -5,7 +5,7 @@ const members = [
   {
     name: "Panshul",
     role: "Programming & Strategy Lead",
-    desc: "First year in VEX. Strengths in coding: driver and autonomous code and creator of this website. Hands-on experience through Greenpower alongside Kayan. Roles: Lead Programmer and Strategist, documenting in the notebook and game engineer, guiding the driver through matches.",
+    desc: "First year in VEX. Strengths in coding:Our driver and autonomous code and VEX Vr which is currenlty the highest in the UK . Hands-on experience through Greenpower. Roles: Lead Programmer and Strategist, documenting in the notebook and game engineer.Creator of this website ",
   },
   {
     name: "Joshua",
