@@ -3,11 +3,6 @@ import { useRef } from "react";
 
 const members = [
   {
-    name: "Kayan",
-    role: "Driver & Programmer",
-    desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
-  },
-  {
     name: "Panshul",
     role: "Notebook Lead & Programmer",
     desc: "First year in VEX. Strengths in coding: driver and autonomous code and creator of this website. Hands-on experience through Greenpower alongside Kayan. Roles: Lead Programmer and Strategist, documenting in the notebook and game engineer, guiding the driver through matches.",
@@ -18,9 +13,14 @@ const members = [
     desc: "First year competing in VEX. Strengths in efficiency and CAD expertise. Main focus is design and mechanical assembly.",
   },
   {
-    name: "Asha R.",
-    role: "Builder & Designer",
-    desc: "Competed in VEX Year 8 and Year 9. Expert at replicating builds quickly and effectively from reference pictures or CAD models. Exceptional building skills.",
+    name: "Asha P.",
+    role: "Builder & Online Skills",
+    desc: "Three years of VEX experience (Years 7-9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
+  },
+  {
+    name: "Kayan",
+    role: "Driver & Programmer",
+    desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
   },
   {
     name: "Tasnim",
@@ -28,9 +28,9 @@ const members = [
     desc: "Competed in VEX IQ Year 9, reached two regional competitions. Strengths in creativity, art skills, and organization. Primary focus on documentation and design phase support.",
   },
   {
-    name: "Asha P.",
-    role: "Builder & Online Skills",
-    desc: "Three years of VEX experience (Years 7-9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
+    name: "Asha R.",
+    role: "Builder & Designer",
+    desc: "Competed in VEX Year 8 and Year 9. Expert at replicating builds quickly and effectively from reference pictures or CAD models. Exceptional building skills.",
   },
 ];
 
