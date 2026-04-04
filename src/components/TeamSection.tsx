@@ -19,7 +19,7 @@ const members = [
   },
   {
     name: "Kayan",
-    role: "Driver & Team Organiser",
+    role: "Driver & Programmer",
     desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
   },
   {
