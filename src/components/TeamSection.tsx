@@ -4,7 +4,7 @@ import { useRef } from "react";
 const members = [
   {
     name: "Panshul",
-    role: "Notebook Lead & Programmer",
+    role: "Programmer & Strategy Lead",
     desc: "First year in VEX. Strengths in coding: driver and autonomous code and creator of this website. Hands-on experience through Greenpower alongside Kayan. Roles: Lead Programmer and Strategist, documenting in the notebook and game engineer, guiding the driver through matches.",
   },
   {
@@ -24,7 +24,7 @@ const members = [
   },
   {
     name: "Tasnim",
-    role: "Notebooker & CAD Designer",
+    role: "Notebook Lead & CAD Designer",
     desc: "Competed in VEX IQ Year 9, reached two regional competitions. Strengths in creativity, art skills, and organization. Primary focus on documentation and design phase support.",
   },
   {
