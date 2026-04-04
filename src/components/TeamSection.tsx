@@ -9,7 +9,7 @@ const members = [
   },
   {
     name: "Joshua",
-    role: "CAD Designer & Builder",
+    role: "Build Lead & CAD Designer",
     desc: "First year competing in VEX. Strengths in efficiency and CAD expertise. Main focus is design and mechanical assembly.",
   },
   {
