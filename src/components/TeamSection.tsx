@@ -14,7 +14,7 @@ const members = [
   },
   {
     name: "Asha P.",
-    role: "Builder & Online Skills",
+    role: "Builder & Online Challenges",
     desc: "Three years of VEX experience (Years 7-9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
   },
   {
@@ -24,12 +24,12 @@ const members = [
   },
   {
     name: "Tasnim",
-    role: "Notebook Lead & CAD Designer",
+    role: "Notebook Lead & Designer",
     desc: "Competed in VEX IQ Year 9, reached two regional competitions. Strengths in creativity, art skills, and organization. Primary focus on documentation and design phase support.",
   },
   {
     name: "Asha R.",
-    role: "Builder & Designer",
+    role: "Builder & Skills",
     desc: "Competed in VEX Year 8 and Year 9. Expert at replicating builds quickly and effectively from reference pictures or CAD models. Exceptional building skills.",
   },
 ];
