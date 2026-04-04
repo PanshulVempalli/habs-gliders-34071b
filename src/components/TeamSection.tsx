@@ -10,7 +10,7 @@ const members = [
   {
     name: "Panshul",
     role: "Notebook Lead & Programmer",
-    desc: "First year in VEX. Strengths in Python coding and technical writing. Hands-on experience through Greenpower competition alongside Kayan. Primary roles in notebook and programming.",
+    desc: "First year in VEX. Strengths in coding: driver and autonomous code and creator of this website. Hands-on experience through Greenpower alongside Kayan. Roles: Lead Programmer and Strategist, documenting in the notebook and game engineer, guiding the driver through matches.",
   },
   {
     name: "Joshua",
