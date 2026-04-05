@@ -56,6 +56,15 @@ const HeroSection = () => {
           VEX Robotics World Championships. Join us as we share our story, achievements, and the path to St. Louis, Missouri, April 25th, 2026.
         </motion.p>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.85 }}
+          className="text-foreground/40 text-sm mx-auto mb-10 font-body"
+        >
+          Created by team member Panshul Vempalli
+        </motion.p>
+
         <motion.a
           href="#about"
           initial={{ opacity: 0 }}
