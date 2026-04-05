@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import PushBack from "./pages/PushBack.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <Analytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/push-back" element={<PushBack />} />
