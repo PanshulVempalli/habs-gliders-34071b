@@ -8,6 +8,7 @@ import PushBack from "./pages/PushBack.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Analytics />
+        <SpeedInsights />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/push-back" element={<PushBack />} />
