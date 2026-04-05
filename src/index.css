@@ -89,3 +89,12 @@
     border: 1px solid hsl(var(--gold) / 0.3);
   }
 }
+
+@keyframes highlight-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0); border-color: hsl(var(--gold) / 0.3); }
+  50% { box-shadow: 0 0 24px 6px hsl(var(--gold) / 0.5); border-color: hsl(var(--gold) / 1); }
+}
+
+.highlight-card {
+  animation: highlight-pulse 1s ease-in-out 2;
+}

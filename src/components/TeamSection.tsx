@@ -62,6 +62,7 @@ const TeamSection = () => {
           {members.map((m, i) => (
             <motion.div
               key={m.name}
+              id={m.name === "Panshul" ? "panshul-card" : undefined}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}

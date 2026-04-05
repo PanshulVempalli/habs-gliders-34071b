@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -50,7 +50,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body"
+          className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-6 font-body"
         >
           The first mixed team from Haberdashers' Elstree Schools to qualify for the
           VEX Robotics World Championships. Join us as we share our story, achievements, and the path to St. Louis, Missouri, April 25th, 2026.
@@ -62,7 +62,23 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.85 }}
           className="text-foreground/40 text-sm mx-auto mb-10 font-body"
         >
-          Created by team member Panshul Vempalli
+          Created by team member{" "}
+          <a
+            href="#team"
+            onClick={() => {
+              setTimeout(() => {
+                const el = document.getElementById("panshul-card");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth", block: "center" });
+                  el.classList.add("highlight-card");
+                  setTimeout(() => el.classList.remove("highlight-card"), 2000);
+                }
+              }, 400);
+            }}
+            className="text-gold hover:text-gold/80 underline underline-offset-2 cursor-pointer transition-colors"
+          >
+            Panshul Vempalli
+          </a>
         </motion.p>
 
         <motion.a
