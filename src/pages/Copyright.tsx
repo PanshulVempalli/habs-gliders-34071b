@@ -1,8 +1,14 @@
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+
 const CopyrightPage = () => {
   const year = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-background text-foreground px-6 py-16 max-w-3xl mx-auto">
+      <Link to="/" className="inline-flex items-center gap-2 text-gold text-sm mb-8 hover:text-gold/80 transition-colors">
+        <ArrowLeft size={16} /> Back to Home
+      </Link>
       <h1 className="font-display text-4xl text-primary mb-2">COPYRIGHT NOTICE</h1>
       <p className="text-muted-foreground text-sm mb-10">Last updated: April 2026</p>
 
