@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import PushBack from "./pages/PushBack.tsx";
+import Copyright from "./pages/Copyright.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
@@ -30,6 +31,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/push-back" element={<PushBack />} />
+          <Route path="/copyright" element={<Copyright />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
