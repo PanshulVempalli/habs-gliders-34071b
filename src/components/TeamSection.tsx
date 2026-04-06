@@ -8,6 +8,11 @@ const members = [
     desc: "First year in VEX. Strengths in coding:Our driver and autonomous code and VEX Vr which is currenlty the highest in the UK . Hands-on experience through Greenpower. Roles: Lead Programmer and Strategist, documenting in the notebook and game engineer.Creator of this website ",
   },
   {
+    name: "Kayan",
+    role: "Driver & Programmer",
+    desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
+  },
+  {
     name: "Joshua",
     role: "Build Lead & CAD Designer",
     desc: "First year competing in VEX. Strengths in efficiency and CAD expertise. Main focus is design and mechanical assembly.",
@@ -16,11 +21,6 @@ const members = [
     name: "Asha P.",
     role: "Builder & Online Challenges",
     desc: "Three years of VEX experience (Years 7-9) as a builder. Expert problem-solving skills honed through consistent building experience. Primary focus on mechanical assembly, secondary on online skills.",
-  },
-  {
-    name: "Kayan",
-    role: "Driver & Programmer",
-    desc: "Led a VEX IQ team in Year 8, strong coder taking CS IGCSE early. Extensive hands-on experience through Greenpower competition, leading the HABS PowerStrike team focusing on design and performance.",
   },
   {
     name: "Tasnim",
