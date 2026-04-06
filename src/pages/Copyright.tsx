@@ -49,7 +49,7 @@ const CopyrightPage = () => {
         <p className="text-foreground/80 leading-relaxed">
           You may view and share links to this website freely. You may not copy, reproduce, republish, scrape,
           or distribute any content from this site for commercial purposes without express written consent from
-          Panshul Vempalli or HABS Gliders.
+          Panshul Vempalli solely.
         </p>
       </section>
 
