@@ -56,7 +56,15 @@ const CopyrightPage = () => {
       <section className="mb-8">
         <h2 className="font-display text-xl text-primary mb-3">Contact</h2>
         <p className="text-foreground/80 leading-relaxed">
-          For copyright enquiries or permissions, please contact the team through Haberdashers' Elstree Schools.
+          For copyright enquiries, permissions, or any questions relating to this website or its content
+          (including all team members of HABS Gliders), please contact Panshul Vempalli directly at{" "}
+          <a
+            href="mailto:panshulvempalli@gmail.com"
+            className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors"
+          >
+            panshulvempalli@gmail.com
+          </a>
+          . All enquiries on behalf of any HABS Gliders team member should be directed to this address.
         </p>
       </section>
 
