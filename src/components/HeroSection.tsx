@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Trophy } from "lucide-react";
 import logo from "@/assets/habs-gliders-logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -46,6 +47,18 @@ const HeroSection = () => {
           TEAM 34071B · VEX V5 ROBOTICS
         </motion.p>
 
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="inline-flex items-center gap-3 bg-gold/10 border border-gold/40 rounded-full px-6 py-3 mb-8 backdrop-blur-sm"
+        >
+          <Trophy className="text-gold shrink-0" size={24} />
+          <span className="font-display text-gold text-sm md:text-base font-semibold tracking-wide">
+            JUDGES AWARD WINNERS — VEX ROBOTICS WORLD CHAMPIONSHIPS 2026
+          </span>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,7 +75,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.85 }}
           className="text-foreground/40 text-sm mx-auto mb-10 font-body"
         >
-          Created by team member{" "}
+          Website by team members{" "}
           <a
             href="#team"
             onClick={() => {
@@ -78,6 +91,13 @@ const HeroSection = () => {
             className="text-gold hover:text-gold/80 underline underline-offset-2 cursor-pointer transition-colors"
           >
             Panshul Vempalli
+          </a>
+          {" "}and{" "}
+          <a
+            href="#team"
+            className="text-gold hover:text-gold/80 underline underline-offset-2 cursor-pointer transition-colors"
+          >
+            Kayan Shah
           </a>
         </motion.p>
 
