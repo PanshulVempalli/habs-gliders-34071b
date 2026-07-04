@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a personal portfolio repository maintained by Kayan Shah. Contributions, issues, and interactions are welcome, provided they remain respectful and constructive.
+This is a team website repository maintained by Kayan Shah. Contributions, issues, and interactions are welcome, provided they remain respectful and constructive.
 
 ## Attribution Requirement
 
@@ -32,7 +32,7 @@ Failure to provide attribution is a violation of this Code of Conduct and the te
 
 ## Reporting
 
-If you experience or witness unacceptable behaviour, please contact [kayan.shah@icloud.com](mailto:kayan.shah@icloud.com).
+If you experience or witness unacceptable behaviour, please contact [hi@kayanshah.com](mailto:hi@kayanshah.com).
 
 ## Scope
 
