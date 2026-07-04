@@ -1,7 +1,7 @@
 
 
 
-Built by Panshul Vempalli : https://github.com/PanshulVempalli  
+Built by Panshul Vempalli: https://github.com/PanshulVempalli and Kayan Shah: https://github.com/KayanShah
 
 Made for Team Habs Gliders 34071B
 
