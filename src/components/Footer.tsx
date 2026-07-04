@@ -13,7 +13,7 @@ const Footer = () => {
         </p>
         <p className="text-muted-foreground/50 text-xs mt-4">
           <Link to="/copyright" className="hover:text-muted-foreground transition-colors underline underline-offset-2">
-            © {year} HABS Gliders · Website by Panshul Vempalli. All rights reserved.
+            © {year} HABS Gliders · Website by Panshul Vempalli and Kayan Shah. All rights reserved.
           </Link>
         </p>
       </div>
