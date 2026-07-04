@@ -1,8 +1,18 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award, Globe, Star, Smartphone } from "lucide-react";
+import { Award, Globe, Star, Trophy } from "lucide-react";
 
 const achievements = [
+  {
+    icon: Trophy,
+    title: "Judges Award — Worlds 2026",
+    desc: "Won the prestigious Judges Award at the VEX Robotics World Championships 2026 in St. Louis, Missouri.",
+  },
+  {
+    icon: Award,
+    title: "Judges Award — Herts League of Legends",
+    desc: "Recognised with the Judges Award at the Herts League of Legends competition.",
+  },
   {
     icon: Globe,
     title: "#1 in the UK",
@@ -17,11 +27,6 @@ const achievements = [
     icon: Award,
     title: "National Semifinalists",
     desc: "Advanced to the semifinals at the UK VEX V5 National Championship 2026.",
-  },
-  {
-    icon: Award,
-    title: "Judges Award",
-    desc: "Awarded Judges Award at the League of Legends Regional Event.",
   },
 ];
 
@@ -41,14 +46,14 @@ const AchievementsSection = () => {
           ACHIEVEMENTS
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {achievements.map((a, i) => (
             <motion.div
               key={a.title}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.15 * i }}
-              className="bg-card border-gradient-gold rounded-lg p-8 text-center hover:glow-gold transition-shadow duration-300"
+              className={`bg-card border-gradient-gold rounded-lg p-8 text-center hover:glow-gold transition-shadow duration-300 ${i === 0 ? "sm:col-span-2 lg:col-span-1" : ""}`}
             >
               <a.icon className="mx-auto mb-4 text-gold" size={36} />
               <h3 className="font-display text-xl text-primary mb-2 font-semibold">{a.title}</h3>
