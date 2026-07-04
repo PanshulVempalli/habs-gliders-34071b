@@ -16,9 +16,9 @@ const CopyrightPage = () => {
         <h2 className="font-display text-xl text-primary mb-3">Website Ownership</h2>
         <p className="text-foreground/80 leading-relaxed">
           This website (<strong>habs-gliders-34071b.vercel.app</strong>) was designed and developed by{" "}
-          <strong>Panshul Vempalli</strong>, a member of HABS Gliders (Team 34071B), competing in the VEX V5
+          <strong>Panshul Vempalli and Kayan Shah</strong>, members of HABS Gliders (Team 34071B), competing in the VEX V5
           Robotics World Championships 2026. All website design, code, layout, and structure is the intellectual
-          property of Panshul Vempalli © {year}.
+          property of Panshul Vempalli and Kayan Shah © {year}.
         </p>
       </section>
 
@@ -55,7 +55,7 @@ const CopyrightPage = () => {
         <p className="text-foreground/80 leading-relaxed">
           You may view and share links to this website freely. You may not copy, reproduce, republish, scrape,
           or distribute any content from this site for commercial purposes without express written consent from
-          Panshul Vempalli solely.
+          Panshul Vempalli and Kayan Shah.
         </p>
       </section>
 
@@ -75,7 +75,7 @@ const CopyrightPage = () => {
       </section>
 
       <p className="text-muted-foreground/50 text-xs mt-12 border-t border-border pt-6">
-        © {year} HABS Gliders · Website by Panshul Vempalli · All rights reserved.
+        © {year} HABS Gliders · Website by Panshul Vempalli and Kayan Shah · All rights reserved.
       </p>
     </div>
   );
